@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoPedia</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+
+        <a class="brand" href="#top" aria-label="EcoPedia Home">
+            <img class="brand-logo" src="assets/logo-ecopedia-2.png" alt="Logo EcoPedia" />
+            <div class="brand-text">
+                <h1>EcoPedia</h1>
+                <p>Informasi Sampah • Pilah • Daur Ulang</p>
+            </div>
+        </a>
+
+      <div class="nav-actions">
+        <!-- SEARCH -->
+        <div class="nav-search">
+            <div class="nav-search-wrap">
+                <input id="navSearch" type="text" placeholder="Cari sampah... (baterai, botol, minyak)" autocomplete="off" />
+            <div id="navSuggest" class="nav-suggest hidden"></div>
+            </div>
+            <button id="btnNavSearch" class="nav-btn">Search</button>
+        </div>
+        <!-- DROPDOWN -->
+        <div class="dropdown">
+          <button class="dropbtn" id="dropBtn" aria-haspopup="true" aria-expanded="false">
+            Navigasi <span class="chev">▾</span>
+          </button>
+          <div class="dropdown-content" id="dropMenu">
+            <a href="#why">Kenapa Penting</a>
+            <a href="#types">Jenis Sampah</a>
+            <a href="#sort">Cara Pilah</a>
+            <a href="#pedia">Ensiklopedia</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+      </div>
+
+      <!-- MOBILE MENU PANEL -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="#why">Kenapa Penting</a>
+        <a href="#types">Jenis Sampah</a>
+        <a href="#sort">Cara Pilah</a>
+        <a href="#pedia">Ensiklopedia</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- WELCOME FULL PAGE -->
+  <section class="welcome">
+    <div class="container welcome-inner reveal">
+        <img class="welcome-logo" src="assets/logo-ecopedia.png" alt="EcoPedia Logo" />
+
+      <div class="welcome-badge">
+        <span class="dot"></span>
+        Welcome • EcoPedia • Earth Theme
+      </div>
+
+      <h2 class="welcome-title">
+        Welcome to <span class="accent">EcoPedia</span> 👋
+      </h2>
+
+      <p class="welcome-desc">
+        EcoPedia adalah website edukasi publik yang membantu kamu memahami cara memilah dan membuang sampah dengan benar.
+        Kamu bisa mencari jenis sampah sehari-hari dan langsung mendapatkan panduan yang ringkas, jelas, dan mudah dipraktikkan.
+      </p>
+
+      <div class="welcome-actions">
+        <a class="btn primary" href="#why">Mulai Baca</a>
+        <a class="btn ghost" href="#pedia">Buka Ensiklopedia</a>
+      </div>
+
+      <div class="welcome-hint">
+        <span class="mouse"></span>
+        <span>Scroll untuk lanjut</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Kenapa Pengelolaan Sampah Itu Penting?</h2>
+          <p>
+            Sampah bukan hanya soal “bersih atau kotor”. Ini adalah masalah sistem: kebiasaan, logistik,
+            biaya pengolahan, dan dampak lingkungan. Ketika sampah tidak dikelola dengan baik, dampaknya meluas
+            menjadi pencemaran air, tanah, udara, hingga meningkatnya risiko kesehatan masyarakat.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card reveal">
+            <h3>🏙️ Dampak di Kota</h3>
+            <p>
+              Sampah menumpuk memicu bau, banjir akibat saluran tersumbat, dan risiko penyakit.
+              Over kapasitas TPA juga membuat masalah semakin sulit diatasi.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>🌊 Dampak di Laut</h3>
+            <p>
+              Sampah plastik terbawa sungai ke laut lalu terurai menjadi mikroplastik.
+              Mikroplastik masuk rantai makanan dan dampaknya jangka panjang.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>💸 Dampak Ekonomi</h3>
+            <p>
+              Sampah yang tercampur membuat pemilahan makin mahal.
+              Pilah dari rumah adalah cara paling murah dan paling realistis membantu sistem.
+            </p>
+          </div>
+        </div>
+
+        <div class="long-card reveal">
+          <h3>Filosofi EcoPedia</h3>
+          <p>
+            Sampah bukan hanya barang yang dibuang, tetapi bagian dari sistem. Jika kita salah membuang satu jenis sampah,
+            dampaknya menyebar ke proses lain: pengangkutan, pemilahan, hingga pengolahan akhir. Karena itu EcoPedia dibuat
+            untuk membantu masyarakat memahami langkah kecil yang benar agar dampaknya besar.
+          </p>
+        </div>
+
+        <div class="long-card reveal">
+          <h3>Tips cepat</h3>
+          <p>
+            Kalau kamu bingung mulai dari mana, gunakan fitur pencarian di navbar.
+            Coba cari: <b>baterai</b>, <b>styrofoam</b>, atau <b>minyak</b>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TYPES -->
+    <section class="section" id="types">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Jenis Sampah Utama</h2>
+          <p>
+            Pembagian kategori sampah membantu menentukan penanganan yang tepat. Ada sampah yang bisa diolah ulang,
+            dan ada yang harus dipisah karena berbahaya.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="type-box reveal">
+            <h3>🍃 Organik</h3>
+            <p>
+              Sampah sisa makhluk hidup. Bisa diolah menjadi kompos jika dipisahkan dengan benar.
+            </p>
+            <ul class="list">
+              <li>Contoh: sisa makanan, kulit buah</li>
+              <li>Rekomendasi: wadah organik / kompos</li>
+            </ul>
+          </div>
+
+          <div class="type-box reveal">
+            <h3>🧴 Anorganik</h3>
+            <p>
+              Sampah bahan buatan seperti plastik/kaca/kaleng. Sebagian dapat didaur ulang jika bersih.
+            </p>
+            <ul class="list">
+              <li>Contoh: botol plastik, kardus, kaleng</li>
+              <li>Rekomendasi: bilas, keringkan, pilah</li>
+            </ul>
+          </div>
+
+          <div class="type-box reveal">
+            <h3>⚠️ B3</h3>
+            <p>
+              Sampah berbahaya. Jangan dicampur dengan sampah biasa karena dapat bocor dan mencemari lingkungan.
+            </p>
+            <ul class="list">
+              <li>Contoh: baterai, obat kadaluarsa</li>
+              <li>Rekomendasi: simpan terpisah</li>
+            </ul>
+          </div>
+
+          <div class="type-box reveal">
+            <h3>💻 E-waste</h3>
+            <p>
+              Limbah elektronik. Idealnya dikumpulkan dan disetorkan ke program e-waste.
+            </p>
+            <ul class="list">
+              <li>Contoh: lampu rusak, charger rusak</li>
+              <li>Rekomendasi: drop point e-waste</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SORT -->
+    <section class="section" id="sort">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Cara Pilah Sampah yang Benar</h2>
+          <p>
+            Pilah sampah akan berhasil jika kamu punya sistem sederhana dan konsisten.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>Siapkan 3–4 wadah</h3>
+              <p>Organik, Anorganik, Residu/B3, dan E-waste jika memungkinkan.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>Bilas & keringkan</h3>
+              <p>Hindari kontaminasi. Sampah bersih lebih mudah diproses.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>Pisahkan B3</h3>
+              <p>Simpan baterai dan limbah berbahaya dalam wadah tertutup.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3>Kurangi sekali pakai</h3>
+              <p>Bawa tumbler dan tas belanja untuk mengurangi sampah dari sumbernya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIA -->
+    <section class="section" id="pedia">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Ensiklopedia Sampah</h2>
+          <p>Klik item untuk melihat detail lengkap.</p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="toolbar-left">
+            <input id="searchInput" type="text" placeholder="Cari sampah di ensiklopedia..." />
+            <select id="categoryFilter">
+              <option value="all">Semua Kategori</option>
+              <option value="Organik">Organik</option>
+              <option value="Anorganik">Anorganik</option>
+              <option value="B3">B3</option>
+              <option value="E-waste">E-waste</option>
+            </select>
+          </div>
+          <div class="toolbar-right">
+            <span class="hint" id="countInfo">Menampilkan data...</span>
+          </div>
+        </div>
+
+        <div id="list" class="grid-3"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>FAQ</h2>
+          <p>Pertanyaan singkat yang sering muncul.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal" open>
+            <summary>Apakah semua plastik bisa didaur ulang?</summary>
+            <p>Tidak. Pastikan plastik bersih, kering, dan sesuai jenis yang diterima fasilitas setempat.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Kenapa sampah harus dibersihkan sebelum recycle?</summary>
+            <p>Karena kontaminasi dapat membuat satu batch recycle ditolak.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Bagaimana membuang baterai bekas?</summary>
+            <p>Simpan terpisah dalam wadah kering, lalu setor ke drop point B3/e-waste jika tersedia.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- Kolom 1 -->
+    <div>
+      <div class="footer-brand">
+        <img class="brand-logo" src="assets/logo-ecopedia-2.png" alt="Logo EcoPedia" />
+        <div>
+          <h3>EcoPedia</h3>
+          <p>Edukasi publik untuk pilah sampah</p>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        EcoPedia membantu masyarakat memahami kategori sampah dan langkah pembuangan yang benar melalui informasi yang ringkas dan mudah diakses.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div>
+      <h4>Menu</h4>
+      <div class="footer-links">
+        <a href="#why">Kenapa Penting</a>
+        <a href="#types">Jenis Sampah</a>
+        <a href="#sort">Cara Pilah</a>
+        <a href="#pedia">Ensiklopedia</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div>
+      <h4>Kontak & Media Sosial</h4>
+
+      <div class="footer-contact">
+
+        <a class="contact-link" href="mailto:riyansamuel6@gmail.com" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 8l8 5 8-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 8v10h16V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <b>Email</b>
+            <small>riyansamuel6@gmail.com</small>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://www.instagram.com/riyaannnns_?igsh=MTZodXo2aDRncTEzZA==" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M16.5 7.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M12 9a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <b>Instagram</b>
+            <small>@riyaannnns_</small>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://wa.me/6281286983212" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 21a9 9 0 1 0-7.7-4.3L3 21l4.5-1.2A8.9 8.9 0 0 0 12 21Z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9.5 9.5c.5 3 3 5.5 6 6l1-1c.3-.3.8-.3 1.2-.1l1.2.6c.5.2.7.8.4 1.3-.5.8-1.4 1.6-2.4 1.5-4.8-.5-8.9-4.6-9.4-9.4-.1-1 .7-1.9 1.5-2.4.5-.3 1.1-.1 1.3.4l.6 1.2c.2.4.2.9-.1 1.2l-1 1Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <b>WhatsApp</b>
+            <small>+62 812-8698-3212</small>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://github.com/Okeanos404" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M9 19c-4 1.2-4-2-5-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 19v-2.2c0-.6.2-1.1.6-1.5 2.3-.3 4.4-1.1 4.4-5.2 0-1.1-.4-2-1-2.8.1-.3.5-1.4-.1-2.8 0 0-.8-.3-2.8 1a9.8 9.8 0 0 0-5.2 0c-2-1.3-2.8-1-2.8-1-.6 1.4-.2 2.5-.1 2.8-.6.8-1 1.7-1 2.8 0 4.1 2.1 4.9 4.4 5.2.4.4.6.9.6 1.5V19"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <b>GitHub</b>
+            <small>Okeanos404</small>
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container copyright">
+    © 2026 EcoPedia • Earth Theme
+  </div>
+</footer>
+
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="btnClose" class="modal-close" aria-label="Tutup detail">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 4L5 11H9V20H15V11H19L12 4Z" fill="white"/>
+    </svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
